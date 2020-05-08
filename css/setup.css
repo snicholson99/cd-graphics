@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(0, 33, 43);
+}
+
+.page {
+  height: calc(100vh - 16vh);
+  background-color: rgb(226, 227, 229);
+  z-index: 1;
+  padding-top: 16vh;
+  margin-top: -16vh;
+}
