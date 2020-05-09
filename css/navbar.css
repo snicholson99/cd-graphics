@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(226, 227, 229);
-  border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
   width: 100%;
   height: 16vh;
   position: fixed;
@@ -20,4 +20,21 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+        
+.nav-text:after {
+  content: '';
+  width: 30px;
+  height: 1px;
+  border-bottom: 1px solid rgb(0, 33, 43);
+  padding-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-text:hover:after {
+  opacity: 1;
 }

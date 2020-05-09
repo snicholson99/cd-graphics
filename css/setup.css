@@ -5,10 +5,31 @@
   color: rgb(0, 33, 43);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   height: calc(100vh - 16vh);
   background-color: rgb(226, 227, 229);
   z-index: 1;
   padding-top: 16vh;
   margin-top: -16vh;
+}
+            
+.page-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+
+.page-heading:after {
+  content: '';
+  padding-bottom: 20px;
+  height: 1px;
+  width: 40px;
+  border-bottom: 2px solid rgb(0, 33, 43);
 }

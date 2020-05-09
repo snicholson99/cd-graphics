@@ -1,0 +1,13 @@
+.portfolio-grid-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-grid-item {
+  height: 200px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
