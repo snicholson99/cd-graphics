@@ -1,24 +1,62 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: rgb(0, 33, 43);
-}
-
 html {
+  height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+body, header, footer {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  height: 100%;
+  width: 100%;
   font-family: avenir, sans-serif;
 }
 
+h1 {
+  font-size: 3.0rem;
+  font-size: calc(3.0rem + 0.1vw);
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 2.4rem;
+  font-size: calc(2.4rem + 0.1vw);
+}
+h3 {
+  font-size: 2.0rem;
+  font-size: calc(2.0rem + 0.1vw);
+}
+h4 {
+  font-size: 1.8rem;
+  font-size: calc(1.8rem + 0.1vw);
+}
+h5 {
+  font-size: 1.5rem;
+  font-size: calc(1.5rem + 0.1vw);
+}
+h6 {
+  font-size: 1.2rem;
+  font-size: calc(1.2rem + 0.1vw);
+}
+p, li {
+  font-size: 1.5rem;
+  font-size: calc(1.5rem + 0.2vw);
+  font-weight: 400;
+  line-height: 1.5;
+}
+small {
+  font-size: calc(1.0rem + 0.1vw);
+}
+a:visited {
+  color: unset;
+}
+
 .page {
-  height: calc(100vh - 16vh);
+  min-height: calc(100vh - 16vh);
   background-color: rgb(226, 227, 229);
   z-index: 1;
-  padding-top: 16vh;
   margin-top: -16vh;
+  padding: 16vh 4vw 0;
 }
             
 .page-heading {
@@ -40,3 +78,6 @@ h1, h2, h3, h4, h5, h6, p {
   width: 40px;
   border-bottom: 2px solid rgb(0, 33, 43);
 }
+
+/* @media screen and (max-width: 600px) {
+} */
