@@ -63,12 +63,12 @@
   height: 20vh;
 }
 
-#landing-arrow-container:hover {
-  animation: bounce 2s ease-in-out infinite;
-}
 
-/* @media screen and (max-width: 600px) {
-} */
+@media screen and (min-width: 600px) {
+  #landing-arrow-container:hover {
+    animation: bounce 2s ease-in-out infinite;
+  }
+}
 
 @keyframes bounce {
   0% {
