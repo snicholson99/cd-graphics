@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family: avenir, sans-serif;
+}
+
 .page {
   height: calc(100vh - 16vh);
   background-color: rgb(226, 227, 229);
@@ -24,6 +28,9 @@ html {
   align-items: center;
   margin: 50px 0;
   text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.08rem;
+  font-weight: 900;
 }
 
 .page-heading:after {

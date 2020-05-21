@@ -5,8 +5,9 @@
 }
 
 .portfolio-grid-item {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 500px;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
