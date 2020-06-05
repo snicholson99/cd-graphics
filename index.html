@@ -15,7 +15,7 @@
 
 <body>
   <div id="navbar">
-    <a href="" class="nav-item nav-logo"><img src="content/cd_graphics_logo.jpg" /></a>
+    <a href="" class="nav-item nav-logo"><img src="content/cd_graphics_logo.png" /></a>
     <div>
       <!-- <a href="#explore-page" class="nav-item nav-text">Explore</a>
       <a href="#about-page" class="nav-item nav-text">About</a> -->
@@ -32,7 +32,7 @@
     </div>
     <h2 id="landing-subheading">Graphic Designer</h2>
     <a id="landing-arrow-container" href="#portfolio-page" class="nav-item">
-      <img id="landing-arrow" src="https://picsum.photos/60/200" />
+      <img id="landing-arrow" src="content/arrow.png" />
     </a>
   </div>
 
@@ -43,17 +43,37 @@
   <div id="portfolio-page" class="page">
       <h2 id="portfolio-heading" class="page-heading">Portfolio</h2>
       <div class="portfolio-grid-item-container">
-        <div class="portfolio-grid-item" style="background-image: url('content/the_abbey_card_front.jpg');"></div>
-        <div class="portfolio-grid-item" style="background-image: url('content/good_logo.jpg');"></div>
+        <div class="portfolio-grid-item" style="background-image: url('content/the_abbey_card_front.png');"></div>
+        <div class="portfolio-grid-item" style="background-image: url('content/good_logo.png');"></div>
       </div>
       <div class="portfolio-grid-item-container">
-        <div class="portfolio-grid-item" style="background-image: url('content/business_card_front.jpg');"></div>
-        <div class="portfolio-grid-item" style="background-image: url('content/books_to_the_future_logo.jpg');"></div>
+        <div class="portfolio-grid-item" style="background-image: url('content/business_card_front.png');"></div>
+        <div class="portfolio-grid-item" style="background-image: url('content/books_to_the_future_logo.png');"></div>
       </div>
     </div>
     
     <div id="contact-page" class="page">
         <h2 id="contact-heading" class="page-heading">Contact Me</h2>
+
+        <div id="contact-flex-outer-container">
+          <img src="https://picsum.photos/380/500" />
+          <div id="contact-flex-form-container">
+            <h3>Let&apos;s work together!</h3>
+            <p>Please get in touch if you&apos;d like more information; I am available 7 days a week. I love design and working with people to solve their design problems.</p>
+            <form id="contact-form" action="mailto:test@test.co.uk" method="post" enctype="text/plain">
+              <label>Full Name:
+                <input name="Full Name" />
+              </label>
+              <label>E-mail:
+                <input name="Email" />
+              </label>
+              <label>Message:
+                <textarea name="Message"></textarea>
+              </label>
+              <input type="submit" value="send" id="contact-button" />
+            </form>
+          </div>
+        </div>
 
   </div>
 </body>
