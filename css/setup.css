@@ -61,7 +61,7 @@ small {
 }
 
 .page:not(:last-child) {
-  margin-bottom: 20vh;
+  margin-bottom: 5vh;
 }
 
 .page-heading {
