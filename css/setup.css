@@ -48,9 +48,9 @@ p, li {
 small {
   font-size: calc(1.0rem + 0.1vw);
 }
-a:visited {
-  color: black;
-}
+/* a:visited {
+  color: unset;
+} */
 
 .page {
   min-height: calc(100vh - 16vh);
@@ -83,6 +83,3 @@ a:visited {
   width: 40px;
   border-bottom: 2px solid rgb(0, 33, 43);
 }
-
-/* @media screen and (max-width: 600px) {
-} */
