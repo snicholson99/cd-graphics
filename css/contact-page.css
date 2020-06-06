@@ -3,8 +3,12 @@
   align-items: center;
 }
 
-#contact-flex-outer-container > img {
+#contact-illustration {
   flex: 2 1 50%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 #contact-flex-form-container {
@@ -53,7 +57,9 @@
     align-self: center;
   }
 
-  #contact-flex-outer-container > img {
+  #contact-illustration {
+    flex: none;
+    width: 100%;
     order: 2;
     padding: 40px 0;
   }
