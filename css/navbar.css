@@ -50,14 +50,37 @@
   opacity: 1;
 }
 
+#hamburger-icon {
+  display: none;
+  color: white;
+  margin: 0 30px;
+  font-size: 1.8rem
+}
+
+#hamburger-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16vh;
+  background-color: rgb(102, 191, 234);
+  color: rgb(15, 37, 49);
+  text-align: center;
+  padding: 1vh;
+}
+
 @media screen and (max-width: 600px) {
-  #navbar > div {
-    text-align: right;
+  #hamburger-icon {
+    display: block;
+  }
+
+  #desktop-menu {
+    display: none;
   }
 
   #navbar .nav-text:after,
   #navbar .nav-text:hover:after,
   #navbar .nav-text:active:after {
+    content: none;
     border-bottom: none;
   }
 }
