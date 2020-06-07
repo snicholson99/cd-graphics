@@ -1,10 +1,10 @@
-.portfolio-grid-item-container {
+.projects-grid-item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.portfolio-grid-item {
+.projects-grid-item {
   height: 300px;
   width: 500px;
   max-width: 100%;
