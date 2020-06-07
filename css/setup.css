@@ -60,6 +60,10 @@ small {
   padding: 16vh 4vw 0;
 }
 
+.first-page {
+  padding-top: 32vh;
+}
+
 .page:not(:last-child) {
   margin-bottom: 5vh;
 }
