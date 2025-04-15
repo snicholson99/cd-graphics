@@ -1,45 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>CD Graphics | Books to the Future</title>
-  <link rel="shortcut icon" type="image/png" href="../content/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="../css/setup.css">
-  <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="../css/projects.css">
-  <script type="text/javascript" src="../js/hamburger-menu.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>CD Graphics | Books to the Future</title>
+    <link rel="shortcut icon" type="image/png" href="../content/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/setup.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/projects.css" />
+    <script type="text/javascript" src="../js/hamburger-menu.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-  <div id="navbar">
-    <a href="../index.html" class="nav-item nav-logo"><img src="../content/cd_graphics_logo.png" /></a>
-    <div id="desktop-menu">
-      <a href="../index.html#projects-page" class="nav-item nav-text">Projects</a>
-      <a href="../index.html#contact-page" class="nav-item nav-text">Contact</a>
+  <body>
+    <div id="navbar">
+      <div id="navbar-inner" class="container">
+        <a href="../index.html" class="nav-item nav-logo"
+          ><img src="../content/cd_graphics_logo.png"
+        /></a>
+        <div id="desktop-menu">
+          <a href="../index.html#projects-page" class="nav-item nav-text"
+            >Projects</a
+          >
+          <a href="../index.html#contact-page" class="nav-item nav-text"
+            >Contact</a
+          >
+        </div>
+        <a
+          href="javascript:void(0);"
+          id="hamburger-icon"
+          onclick="toggleMobileNavbar()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <div id="hamburger-menu" style="display: none">
+          <a
+            href="../index.html#projects-page"
+            class="nav-item nav-text"
+            onclick="toggleMobileNavbar()"
+            >Projects</a
+          >
+          <a
+            href="../index.html#contact-page"
+            class="nav-item nav-text"
+            onclick="toggleMobileNavbar()"
+            >Contact</a
+          >
+        </div>
+      </div>
     </div>
-    <a href="javascript:void(0);" id="hamburger-icon" onclick="toggleHamburgerMenu()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <div id="hamburger-menu" style="display: none;">
-      <a href="../index.html#projects-page" class="nav-item nav-text" onclick="toggleHamburgerMenu()">Projects</a>
-      <a href="../index.html#contact-page" class="nav-item nav-text" onclick="toggleHamburgerMenu()">Contact</a>
-    </div>
-  </div>
 
-  <div class="page first-page project-page">
+    <div class="page first-page project-page">
       <h2 class="page-heading">Books to the Future</h2>
       <p>Page content coming soon!</p>
-      
-      <!-- <div class="project-image" style="background-image: url('../');"></div>
-      <p></p> -->
-      
-      
-      
     </div>
-
-
-</body>
+  </body>
 </html>

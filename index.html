@@ -1,83 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>CD Graphics</title>
-  <link rel="shortcut icon" type="image/png" href="content/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="css/setup.css">
-  <link rel="stylesheet" type="text/css" href="css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="css/landing-page.css">
-  <link rel="stylesheet" type="text/css" href="css/projects-page.css">
-  <link rel="stylesheet" type="text/css" href="css/contact-page.css">
-  <script type="text/javascript" src="js/hamburger-menu.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>CD Graphics</title>
+    <link rel="shortcut icon" type="image/png" href="content/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/setup.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/landing-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact-page.css" />
+    <script type="text/javascript" src="js/toggleMobileNavbar.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-  <div id="navbar">
-    <a href="" class="nav-item nav-logo"><img src="content/cd_graphics_logo.png" /></a>
-    <div id="desktop-menu">
-      <a href="#projects-page" class="nav-item nav-text">Projects</a>
-      <a href="#contact-page" class="nav-item nav-text">Contact</a>
-    </div>
-    <a href="javascript:void(0);" id="hamburger-icon" onclick="toggleHamburgerMenu()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <div id="hamburger-menu" style="display: none;">
-      <a href="#projects-page" class="nav-item nav-text" onclick="toggleHamburgerMenu()">Projects</a>
-      <a href="#contact-page" class="nav-item nav-text" onclick="toggleHamburgerMenu()">Contact</a>
-    </div>
-  </div>
+  <body>
+    <header id="navbar">
+      <div id="navbar-inner" class="container">
+        <a href="" class="nav-logo"
+          ><img src="content/cd_graphics_logo.png"
+        /></a>
+        <div id="desktop-menu">
+          <a href="#projects-page" class="nav-text">Projects</a>
+          <a href="#contact-page" class="nav-text">Contact</a>
+        </div>
+        <a
+          href="javascript:void(0);"
+          id="hamburger-icon"
+          onclick="toggleMobileNavbar()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <div id="mobile-menu" class="hidden">
+          <a
+            href="#projects-page"
+            class="nav-text"
+            onclick="toggleMobileNavbar()"
+            >Projects</a
+          >
+          <a
+            href="#contact-page"
+            class="nav-text"
+            onclick="toggleMobileNavbar()"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
 
-  <div id="landing-page" class="page first-page">
-    <div id="landing-heading-container">
-      <div id="landing-background-image"></div>
-      <h1 id="landing-heading">Crishan Dalvair</h1>
-      <span id="landing-break"></span>
+    <div id="landing-page" class="page container">
+      <div id="landing-heading-container">
+        <div id="landing-background-image"></div>
+        <h1 id="landing-heading">Crishan Dalvair</h1>
+        <span id="landing-break"></span>
+      </div>
+      <h2 id="landing-subheading">Graphic Designer</h2>
+      <a id="landing-arrow-container" href="#projects-page" class="nav-item">
+        <img id="landing-arrow" src="content/arrow.png" />
+      </a>
     </div>
-    <h2 id="landing-subheading">Graphic Designer</h2>
-    <a id="landing-arrow-container" href="#projects-page" class="nav-item">
-      <img id="landing-arrow" src="content/arrow.png" />
-    </a>
-  </div>
 
-  <div id="projects-page" class="page">
-    <h2 id="projects-heading" class="page-heading">Projects</h2>
-    <div class="projects-grid-item-container">
-      <a href="projects/the-abbey-bar-and-grill-promotion.html" target="_self" class="projects-grid-item" style="background-image: url('content/the_abbey_card_front.png');"></a>
-      <a href="projects/do-good-feel-good.html" target="_self" class="projects-grid-item" style="background-image: url('content/do_good_feel_good_logo.png');"></a>
-    </div>
-    <div class="projects-grid-item-container">
-      <a href="projects/personal-promotion.html" target="_self" class="projects-grid-item" style="background-image: url('content/business_card_front.png');"></a>
-      <a href="projects/books-to-the-future.html" target="_self" class="projects-grid-item" style="background-image: url('content/books_to_the_future_logo.png');"></a>
-    </div>
-  </div>
-    
-  <div id="contact-page" class="page">
-    <h2 id="contact-heading" class="page-heading">Contact Me</h2>
-      
-    <div id="contact-flex-outer-container">
-      <div id="contact-illustration" style="background-image: url('content/crishan_illustration.png');"></div>
-      <div id="contact-flex-form-container">
-        <h3>Let&apos;s work together!</h3>
-        <p>Please get in touch if you&apos;d like more information; I am available 7 days a week. I love design and working with people to solve their design problems.</p>
-        <form id="contact-form" action="mailto:test@test.co.uk" method="post" enctype="text/plain">
-          <label>Full Name:
-            <input name="Full Name" />
-          </label>
-          <label>E-mail:
-            <input name="Email" />
-          </label>
-          <label>Message:
-            <textarea name="Message"></textarea>
-          </label>
-          <input type="submit" value="send" id="contact-button" />
-        </form>
+    <div id="projects-page" class="page container">
+      <h2 id="projects-heading" class="page-heading">Projects</h2>
+      <div class="projects-grid-item-container">
+        <a
+          href="projects/the-abbey-bar-and-grill-promotion.html"
+          target="_self"
+          class="projects-grid-item"
+          style="background-image: url('content/the_abbey_card_front.png')"
+        ></a>
+        <a
+          href="projects/do-good-feel-good.html"
+          target="_self"
+          class="projects-grid-item"
+          style="background-image: url('content/do_good_feel_good_logo.png')"
+        ></a>
+        <a
+          href="projects/personal-promotion.html"
+          target="_self"
+          class="projects-grid-item"
+          style="background-image: url('content/business_card_front.png')"
+        ></a>
+        <a
+          href="projects/books-to-the-future.html"
+          target="_self"
+          class="projects-grid-item"
+          style="background-image: url('content/books_to_the_future_logo.png')"
+        ></a>
       </div>
     </div>
 
-  </div>
-</body>
+    <div id="contact-page" class="page container">
+      <h2 id="contact-heading" class="page-heading">Contact Me</h2>
+
+      <div id="contact-flex-outer-container">
+        <div
+          id="contact-illustration"
+          style="background-image: url('content/crishan_illustration.png')"
+        ></div>
+        <div id="contact-flex-form-container">
+          <h3>Let&apos;s work together!</h3>
+          <p>
+            Please get in touch if you&apos;d like more information; I am
+            available 7 days a week. I love design and working with people to
+            solve their design problems.
+          </p>
+          <form
+            id="contact-form"
+            action="mailto:test@test.co.uk"
+            method="post"
+            enctype="text/plain"
+          >
+            <label
+              >Full Name:
+              <input name="Full Name" />
+            </label>
+            <label
+              >E-mail:
+              <input name="Email" />
+            </label>
+            <label
+              >Message:
+              <textarea name="Message"></textarea>
+            </label>
+            <input type="submit" value="send" id="contact-button" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

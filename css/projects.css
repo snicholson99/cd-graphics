@@ -4,12 +4,25 @@
   align-items: center;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.project {
+  flex: 1 1 300px;
+  text-align: center;
+  text-decoration: unset;
+  color: unset;
+}
+
+.project:visited {
+  color: unset;
+}
+
 .project-image {
-  margin-top: 40px;
   width: 100%;
-  max-width: 800px;
-  min-height: 200px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

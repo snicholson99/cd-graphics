@@ -5,8 +5,10 @@
 }
 
 .projects-grid-item {
-  height: 300px;
-  width: 500px;
+  height: 50vw;
+  max-height: 250px;
+  flex: 1 1 300px;
+  /* width: 500px; */
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
